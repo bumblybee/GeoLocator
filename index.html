@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+    <title>Geolocator</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="mb-4 mt-3">Geolocator</h1>
+      <h5 class="mt-4">
+        Enter Location
+      </h5>
+      <form id="location-form">
+          <input type="radio" name="rad" id="address-radio" />
+        <label for="address-radio" class="mr-3">Address</label>
+        <input type="radio" name="rad" id="coords-radio" />
+        <label for="coords-radio">Coordinates</label>
+        <input type="text" id="location-input" class="form-control mb-2" />
+        
+
+        <button type="submit" class="btn btn-info btn-block mb-3">
+          Submit
+        </button>
+      </form>
+
+      <div class="card mb-2" id="formatted-address"></div>
+
+      <div class="card mb-2" id="address-components"></div>
+
+      <div class="card" id="geometry"></div>
+    </div>
+    <script src="app.js"></script>
+</html>
