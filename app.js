@@ -1,5 +1,3 @@
-requestAnimationFrame("dotenv").config();
-
 const locationForm = document.getElementById("location-form");
 
 locationForm.addEventListener("submit", (e) => {
@@ -105,7 +103,7 @@ locationForm.addEventListener("submit", (e) => {
 async function geocode(params) {
   const url = "https://maps.googleapis.com/maps/api/geocode/json?";
 
-  const key = process.env.API_KEY;
+  const key = "YOUR_API_KEY";
 
   const res = await fetch(url + params + "&key=" + key);
 
